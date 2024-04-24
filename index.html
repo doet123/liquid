@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Creepster&family=Shizuru&display=swap"
+    rel="stylesheet">
+  <title>Fluid Meters</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .meters {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .meter-container {
+      margin-right: 50px;
+      margin-bottom: 30px;
+    }
+
+    .meter-container .meter {
+      width: 400px;
+      height: 400px;
+    }
+
+    .meter-container .controls {
+      padding: 9px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .meter-container .controls :first-child {
+      margin-right: 15px;
+    }
+
+    .meter-container input[type='number'] {
+      padding: 4px 6px;
+      font-size: 18px;
+      color: #2c3e50;
+      border-color: #2c3e50;
+      border-radius: 6px;
+      border-width: 1px;
+    }
+
+    .meter-container button {
+      background-color: #2c3e50;
+      color: #ffffff;
+      padding: 4px 19px;
+      cursor: pointer;
+      border-radius: 6px;
+      letter-spacing: 1px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="meters">
+    <div id="meter-1" class="meter-container">
+      <div class="meter"></div>
+      <div class="controls">
+        <input type="number" placeholder="change-progress">
+        <button>set</button>
+      </div>
+    </div>
+    <div id="meter-2" class="meter-container">
+      <div class="meter"></div>
+      <div class="controls">
+        <input type="number" placeholder="change-progress">
+        <button>set</button>
+      </div>
+    </div>
+    <div id="meter-3" class="meter-container">
+      <div class="meter"></div>
+      <div class="controls">
+        <input type="number" placeholder="change-progress">
+        <button>set</button>
+      </div>
+    </div>
+    <div id="meter-4" class="meter-container">
+      <div class="meter"></div>
+      <div class="controls">
+        <input type="number" placeholder="change-progress">
+        <button>set</button>
+      </div>
+    </div>
+    <div id="meter-5" class="meter-container">
+      <div class="meter"></div>
+      <div class="controls">
+        <input type="number" placeholder="change-progress">
+        <button>set</button>
+      </div>
+    </div>
+    <div id="meter-6" class="meter-container">
+      <div class="meter"></div>
+      <div class="controls">
+        <input type="number" placeholder="change-progress">
+        <button>set</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
